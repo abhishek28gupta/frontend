@@ -1,56 +1,83 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
-    background-image: url(love-background-design_1270-19.avif);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f6d365, #fda085);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-    margin: 200px auto;
-    width: 300px;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    width: 90%;
+    max-width: 400px;
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
     color: #333;
 }
 
-form label {
-    display: block;
-    margin: 10px 0 5px;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-form input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
+label {
+    margin: 0.5rem 0 0.25rem;
+    font-weight: bold;
+}
+
+input {
+    padding: 0.75rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 button {
-    background-color: #007bff;
+    padding: 0.75rem;
+    background-color: #ff7e5f;
     color: white;
-    padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    font-size: 1rem;
     cursor: pointer;
-    width: 100%;
+    transition: background 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #eb5e28;
 }
 
 #result {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #555;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input,
+    button {
+        font-size: 0.95rem;
+        padding: 0.6rem;
+    }
+
+    .container {
+        padding: 1.5rem;
+    }
 }
